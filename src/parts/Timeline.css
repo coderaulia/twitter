@@ -5,6 +5,17 @@
    overflow-y: scroll;
 }
 
+/* remove scrollbar */
+.timeline::-webkit-scrollbar {
+   display: none;
+}
+
+/* remove scrollbar for edge */
+.timeline {
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+
 .timeline__header {
    position: sticky;
    top: 0;
@@ -12,4 +23,9 @@
    z-index: 100;
    border: 1px solid var(--twitter-background);
    padding: 15px 20px;
+}
+
+.timeline__header>h2 {
+   font-size: 20px;
+   font-weight: 800;
 }

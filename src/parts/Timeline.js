@@ -16,6 +16,11 @@ function Timeline() {
 
 			{/* Post */}
 			<Post />
+			<Post />
+			<Post />
+			<Post />
+			<Post />
+			<Post />
 		</div>
 	);
 }

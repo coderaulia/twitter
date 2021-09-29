@@ -3,6 +3,7 @@ import "./Timeline.css";
 import TweetBox from "./TweetBox";
 import Post from "./Post";
 import db from "../firebase";
+import FlipMove from "react-flip-move";
 
 function Timeline() {
 	const [posts, setPosts] = useState([]);
@@ -27,18 +28,19 @@ function Timeline() {
 
 			{/* Post */}
 			{/* creating firebase database, creating firebase data collection, and adding value matching to all the props */}
-
-			{posts.map((post) => (
-				<Post
-					key={post.text}
-					displayName={post.displayName}
-					username={post.username}
-					verified={post.verfied}
-					text={post.text}
-					avatar={post.avatar}
-					image={post.image}
-				/>
-			))}
+			<FlipMove>
+				{posts.map((post) => (
+					<Post
+						key={post.text}
+						displayName={post.displayName}
+						username={post.username}
+						verified={post.verfied}
+						text={post.text}
+						avatar={post.avatar}
+						image={post.image}
+					/>
+				))}
+			</FlipMove>
 		</div>
 	);
 }

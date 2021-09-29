@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Demo
+
+You can see the final build demo here: [https://twitter-clone-5240d.web.app/](https://twitter-clone-5240d.web.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:
